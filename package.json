@@ -1,0 +1,15 @@
+{
+  "name": "css-grid",
+  "version": "1.0.0",
+  "description": "Architecture app that used Css-grid with Sass/Scss",
+  "main": "index.js",
+  "scripts": {
+    "watch": "sass sass/main.scss css/style.css -w"
+  },
+  "keywords": [],
+  "author": "GreatAlhazen",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.60.0"
+  }
+}
