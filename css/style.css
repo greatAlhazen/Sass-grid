@@ -19,8 +19,56 @@ body {
   color: #0d0e0f;
 }
 
-.test {
-  color: #4e4b49;
+.main-wrapper {
+  display: grid;
+  grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
+  grid-template-columns: [side-start] 8rem [side-end all-start] minmax(6rem, 1fr) [main-start] repeat(8, [column-start] minmax(min-content, 14rem) [column-end]) [main-end] minmax(6rem, 1fr) [all-end];
+}
+
+.sidebar {
+  background-color: #9a968a;
+  grid-column: side-start/side-end;
+  grid-row: 1/-1;
+}
+
+.header {
+  background-color: #0d0e0f;
+  color: white;
+  grid-column: all-start/column-end 6;
+}
+
+.architects {
+  background-color: #4e4b49;
+  grid-column: column-start 7/all-end;
+}
+
+.features {
+  background-color: #c5dded;
+  grid-column: main-start/main-end;
+}
+
+.story__detail {
+  background-color: #4e4b49;
+  grid-column: all-start/column-end 4;
+}
+.story__photos {
+  background-color: #b5cedf;
+  grid-column: column-start 5/all-end;
+}
+
+.homes {
+  background-color: #eaeaea;
+  grid-column: main-start/main-end;
+}
+
+.gallery {
+  background-color: #c5dded;
+  grid-column: all-start/all-end;
+}
+
+.footer {
+  background-color: #b5cedf;
+  grid-column: all-start/all-end;
 }
 
 /*# sourceMappingURL=style.css.map */

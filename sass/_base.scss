@@ -18,3 +18,9 @@ body{
     line-height:1.7;
     color:$dark-color;
 }
+
+.main-wrapper{
+    display: grid;
+    grid-template-rows: 80vh min-content 40vw repeat(3,min-content);
+    grid-template-columns: [side-start] 8rem [side-end all-start] minmax(6rem, 1fr) [main-start] repeat(8, [column-start] minmax(min-content, 14rem) [column-end]) [main-end] minmax(6rem, 1fr) [all-end];
+}

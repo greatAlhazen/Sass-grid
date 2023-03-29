@@ -1,6 +1,11 @@
 @import "variables";
 @import "base";
 
-.test{
-    color:$primary-color;
-}
+@import "sidebar";
+@import "header";
+@import "architects";
+@import "features";
+@import "story";
+@import "homes";
+@import "gallery";
+@import "footer";

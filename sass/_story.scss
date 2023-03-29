@@ -1,0 +1,11 @@
+.story {
+	&__detail {
+		background-color: $primary-color;
+		grid-column: all-start / column-end 4;
+	}
+
+	&__photos {
+		background-color: $secondary-color;
+		grid-column: column-start 5 / all-end;
+	}
+}
