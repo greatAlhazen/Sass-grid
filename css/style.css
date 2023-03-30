@@ -25,6 +25,10 @@ body {
   grid-template-columns: [side-start] 8rem [side-end all-start] minmax(6rem, 1fr) [main-start] repeat(8, [column-start] minmax(min-content, 14rem) [column-end]) [main-end] minmax(6rem, 1fr) [all-end];
 }
 
+.title-4 {
+  font-size: 1.9rem;
+}
+
 .sidebar {
   background-color: #9a968a;
   grid-column: side-start/side-end;
@@ -43,8 +47,31 @@ body {
 }
 
 .features {
-  background-color: #c5dded;
   grid-column: main-start/main-end;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+  grid-gap: 6rem;
+  align-items: center;
+  margin: 15rem 0;
+}
+
+.feature-card {
+  display: grid;
+  grid-template-rows: repeat(3, mincontent);
+  grid-row-gap: 1.5rem;
+}
+.feature-card__title {
+  justify-self: center;
+}
+.feature-card__icon {
+  width: 5rem;
+  height: 5rem;
+  fill: #9a968a;
+  justify-self: center;
+}
+.feature-card__text {
+  font-size: 1.3rem;
+  text-align: justify;
 }
 
 .story__detail {
