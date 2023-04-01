@@ -1,3 +1,20 @@
+%title {
+	font-family: $secondary-font;
+	font-weight: 400;
+	letter-spacing: 2px;
+}
+
+.title-2 {
+	@extend %title;
+	font-size: 3.5rem;
+}
+
+.title-3 {
+	@extend %title;
+	font-size: 3rem;
+}
+
 .title-4 {
+	@extend %title;
 	font-size: 1.9rem;
 }
