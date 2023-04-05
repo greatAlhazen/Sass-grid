@@ -1,4 +1,39 @@
 .footer {
-	background-color: $secondary-color;
+	background-color: $primary-color;
+	color: $white-color;
 	grid-column: all-start/all-end;
+	padding: 6rem;
+}
+
+.links {
+	list-style: none;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+	grid-gap: 3rem;
+
+	&__link:link,
+	&__link:visited {
+		text-decoration: none;
+		cursor: pointer;
+		color: inherit;
+		display: inline-block;
+		transition: all .4s;
+
+		&::before {
+			content: '\2713';
+			margin-right: .5rem;
+		}
+	}
+
+	&__link:hover,
+	&__link:active {
+		color: $secondary-color-2;
+		transform: translateY(-4px);
+	}
+}
+
+.copyright {
+	margin-top: 4rem;
+	text-align: center;
+	color: $secondary-color;
 }
