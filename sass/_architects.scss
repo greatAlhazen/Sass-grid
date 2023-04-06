@@ -1,4 +1,28 @@
 .architects {
-	background-color: $primary-color;
+	background-color: $secondary-color;
 	grid-column: column-start 7 / all-end;
+	display: grid;
+	align-content: center;
+	justify-content: center;
+	justify-items: center;
+	grid-row-gap: 1.5rem;
+
+	&__list {
+		display: grid;
+		grid-template-columns: min-content max-content;
+		grid-column-gap: 1.5rem;
+		grid-row-gap: 7vh;
+		align-items: center;
+	}
+
+	&__image {
+		width: 7rem;
+		height: 7rem;
+		border-radius: 50%;
+	}
+
+	&__detail {
+		text-transform: uppercase;
+		margin-top: -3px;
+	}
 }

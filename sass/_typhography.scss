@@ -4,6 +4,11 @@
 	letter-spacing: 2px;
 }
 
+.title-1 {
+	@extend %title;
+	font-size: 4rem;
+}
+
 .title-2 {
 	@extend %title;
 	font-size: 3.5rem;
