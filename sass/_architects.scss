@@ -7,12 +7,24 @@
 	justify-items: center;
 	grid-row-gap: 1.5rem;
 
+	@include responsive(medium) {
+		grid-column: 1/-1;
+	}
+
 	&__list {
 		display: grid;
 		grid-template-columns: min-content max-content;
 		grid-column-gap: 1.5rem;
 		grid-row-gap: 7vh;
 		align-items: center;
+
+		@include responsive(medium) {
+			grid-template-columns: repeat(3, min-content max-content);
+		}
+
+		@include responsive(small) {
+			grid-template-columns: min-content max-content;
+		}
 	}
 
 	&__image {

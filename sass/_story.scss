@@ -6,6 +6,10 @@
 		align-content: center;
 		justify-items: start;
 		padding: 4rem;
+
+		@include responsive(medium) {
+			grid-column: 1 / -1;
+		}
 	}
 
 	&__text {
@@ -39,6 +43,10 @@
 		align-items: center;
 		padding: 0 1rem;
 
+		@include responsive(medium) {
+			grid-column: 1 / -1;
+		}
+
 		&--1 {
 			width: 100%;
 			grid-row: 1 / -1;
@@ -53,11 +61,19 @@
 			width: 100%;
 			grid-row: 5 / -1;
 			grid-column: 1 / 3;
+			@include responsive(medium) {
+				display: none;
+			}
 		}
 		&--4 {
 			width: 100%;
 			grid-row: 5 / -1;
 			grid-column: 5 / -1;
+
+			@include responsive(medium) {
+				grid-row: 5 / -1;
+				grid-column: 2 / 6;
+			}
 		}
 	}
 }

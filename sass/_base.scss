@@ -9,6 +9,11 @@
 html {
 	box-sizing: border-box;
 	font-size: 62.5%;
+	overflow-x: hidden;
+
+	@include responsive(largest) {
+		font-size: 50%;
+	}
 }
 
 body {
@@ -24,4 +29,14 @@ body {
 	grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
 	grid-template-columns: [side-start] 8rem [side-end all-start] minmax(6rem, 1fr) [main-start]
 		repeat(8, [column-start] minmax(min-content, 14rem) [column-end]) [main-end] minmax(6rem, 1fr) [all-end];
+
+	@include responsive(large) {
+		grid-template-rows: 7rem 80vh min-content 40vw repeat(3, min-content);
+		grid-template-columns: [all-start] minmax(6rem, 1fr) [main-start]
+			repeat(8, [column-start] minmax(min-content, 14rem) [column-end]) [main-end] minmax(6rem, 1fr) [all-end];
+	}
+
+	@include responsive(medium) {
+		grid-template-rows: 7rem calc(100vh - 7rem);
+	}
 }

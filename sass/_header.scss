@@ -9,7 +9,12 @@
 	display: grid;
 	grid-template-rows: min-content minmax(6rem, min-content) min-content;
 	grid-template-columns: minmax(min-content, max-content);
+	align-content: center;
 	grid-row-gap: 4rem;
+
+	@include responsive(medium) {
+		grid-column: 1/-1;
+	}
 
 	&__btn {
 		align-items: center;

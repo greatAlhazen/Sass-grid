@@ -43,8 +43,18 @@
 		}
 	}
 
+	&__location {
+		@include responsive(small) {
+			grid-column: 1/-1;
+		}
+	}
+
 	&__deliver {
 		grid-column: 2/-1;
+
+		@include responsive(small) {
+			grid-column: 1/-1;
+		}
 	}
 
 	&__price {
